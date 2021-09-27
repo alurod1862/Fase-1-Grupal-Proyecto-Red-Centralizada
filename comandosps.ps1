@@ -12,3 +12,5 @@ New-NetIPAddress -InterfaceIndex 1 -IPAddress 192.168.1.202 -PrefixLength 24 -De
 Set-DnsClientServerAddress -InterfaceIndex 1 -ServerAddresses 192.168.1.201
 #Cambiar el nombre del equipo
 Rename-Computer -NewName master-upv-es-r
+
+#
