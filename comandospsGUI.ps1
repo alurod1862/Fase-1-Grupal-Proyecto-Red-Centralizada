@@ -4,3 +4,5 @@ w32tm / config / syncfromflags: manual /manualpeerlist:ogether0.us.pool.ntp.org 
 Stop-Service w32time
 #Empezar el servicio
 Start-Service w32time
+#Saber SID
+whoaim /user
