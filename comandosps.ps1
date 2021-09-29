@@ -23,3 +23,8 @@ Start-Service w32time
 w32tm /dumpreg /subkay:parameters
 #Para saber el SID
 whoami /user
+
+#Desactivar IPV6 (desde CMD)
+reg add HKLM\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters /v DisabledComponents /t REG_DWORD /d 0xFF /f
+#Desactivar IPV6 (desde PoweShell)
+New-ItemProperty "HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters\" -Name DisabledComponents -Value 0xFF -PropertyType DWord
