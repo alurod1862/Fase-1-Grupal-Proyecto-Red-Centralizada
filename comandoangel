@@ -11,7 +11,7 @@ New-NetIPAddress -InterfaceIndex 1 -IPAddress 192.168.1.202 -PrefixLength 24 -De
 #Para configurar el DNS
 Set-DnsClientServerAddress -InterfaceIndex 1 -ServerAddresses 192.168.1.201
 #Cambiar el nombre del equipo
-Rename-Computer -NewName master-upv-es-r
+Rename-Computer -NewName Castellon-upv
 
 #Comando para cambiar el servidor horario
 w32tm /config /syncfromflags:manual /manualpeerlist:"0.us.pool.ntp.org time.google.com" /update
