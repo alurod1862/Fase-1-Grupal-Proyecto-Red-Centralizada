@@ -28,3 +28,5 @@ whoami /user
 reg add HKLM\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters /v DisabledComponents /t REG_DWORD /d 0xFF /f
 #Desactivar IPV6 (desde PoweShell)
 New-ItemProperty "HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters\" -Name DisabledComponents -Value 0xFF -PropertyType DWord
+#Cambiar contrseña
+net user +nombre
